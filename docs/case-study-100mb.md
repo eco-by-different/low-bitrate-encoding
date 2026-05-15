@@ -110,4 +110,3 @@ This case demonstrates a full encoding workflow focused on extreme compression:
 - Size: ~100 MB
 - Duration: ~60 minutes
 - Fully playable on low-end hardware
-``
