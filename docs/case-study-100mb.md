@@ -81,12 +81,15 @@ This case demonstrates a full encoding workflow focused on extreme compression:
 
 ---
 
-### 6. Audio Encoding
-- Temporary WAV created
-- Encoded with Nero AAC:
+
+- Encoded using Nero AAC:
   - HE-AAC v2
   - ~48 kbps
-  - 2-pass mode
+  - 2-pass ABR mode
+  - 48 kHz sample rate
+
+- Channel processing:
+  - Converted to 2-channel Dolby Pro Logic (matrix stereo)
 
 ---
 
