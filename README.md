@@ -41,8 +41,8 @@ No copyrighted content is included or distributed.
 
 ## Examples
 
-- docs/case-study-100mb.md
+- - [100 MB encoding case study](docs/case-study-100mb.md)
 
 ## Scripts
 
-- scripts/low-bitrate.avs
+- [Low bitrate AviSynth script](scripts/low-bitrate.avs)
