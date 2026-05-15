@@ -1,3 +1,6 @@
+![Repo size](https://img.shields.io/github/repo-size/eco-by-different/low-bitrate-encoding)
+![Last commit](https://img.shields.io/github/last-commit/eco-by-different/low-bitrate-encoding)
+
 # Low Bitrate Encoding Guide
 
 This repository contains workflows and techniques focused on:
