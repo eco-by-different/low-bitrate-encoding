@@ -41,7 +41,7 @@ No copyrighted content is included or distributed.
 
 ## Examples
 
-- - [100 MB encoding case study](docs/case-study-100mb.md)
+- [100 MB encoding case study](docs/case-study-100mb.md)
 
 ## Scripts
 
