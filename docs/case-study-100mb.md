@@ -93,7 +93,6 @@ This case demonstrates a full encoding workflow focused on extreme compression:
 
 ---
 
-
 ### 7. Video Encoding
 
 - Encoding performed using x264:
@@ -122,3 +121,69 @@ This case demonstrates a full encoding workflow focused on extreme compression:
 - Size: ~100 MB
 - Duration: ~60 minutes
 - Fully playable on low-end hardware
+
+---
+
+#### Advanced Encoding Configuration (x264)
+
+Encoding performed using a custom x264 build (x264 tmod).
+
+---
+
+Pass structure:
+
+- 3-pass size-based encoding (~100 MB target)
+- No fast first pass (full analysis on all passes)
+
+---
+
+Common parameters:
+
+--preset veryslow  
+--tune film  
+--ref 8  
+--aq-mode 3  
+--aq-strength 0.4  
+--deblock 1:1  
+--psy-rd 0.00:0.00  
+--qcomp 0.80  
+--partitions p8x8,b8x8,i8x8,i4x4  
+--rc-lookahead 150  
+--open-gop  
+--non-deterministic  
+--aq3-mode 3  
+--fgo 1  
+--keyint infinite  
+
+---
+
+Note:
+
+- Custom AQ3 mode used for improved low bitrate distribution
+- Psy optimizations disabled (psy-rd 0.00) for cleaner compression behavior
+- Infinite GOP used to maximize compression efficiency
+
+---
+
+Pass execution:
+
+- 3-pass size-based encoding (~100 MB target)
+- All passes use identical encoding parameters (no fast first pass)
+- Only the pass index changes
+
+---
+
+Pass commands (simplified):
+
+All passes share identical encoder settings.
+Only the pass index changes:
+
+Pass 1 (analysis):
+--pass 1 --size 100
+
+Pass 3 (refinement):
+--pass 3 --size 100
+
+Pass 2 (final):
+--pass 2 --size 100
+
