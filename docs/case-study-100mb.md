@@ -77,7 +77,7 @@ This case demonstrates a full encoding workflow focused on extreme compression:
 ### 5. Resize and Timing
 - Crop applied
 - Resized to 576x320 (Spline36)
-- Frame rate converted (23.976 → 25)
+- Frame rate adjusted using AssumeFPS (23.976 → 25)
 
 ---
 
