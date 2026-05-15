@@ -81,7 +81,7 @@ This case demonstrates a full encoding workflow focused on extreme compression:
 
 ---
 
-
+### 6. Audio Encoding
 - Encoded using Nero AAC:
   - HE-AAC v2
   - ~48 kbps
@@ -94,9 +94,7 @@ This case demonstrates a full encoding workflow focused on extreme compression:
 ---
 
 ### 7. Video Encoding
-
 - Encoding performed using x264:
-
   - Target size: ~100 MB (size-based encoding)
   - Bitrate: ~183 kbps
   - Preset: veryslow
