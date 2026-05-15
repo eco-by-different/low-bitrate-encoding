@@ -93,11 +93,20 @@ This case demonstrates a full encoding workflow focused on extreme compression:
 
 ---
 
+
 ### 7. Video Encoding
-- x264 used with:
-  - ~183 kbps bitrate
-  - veryslow preset
-  - multi-pass encoding
+
+- Encoding performed using x264:
+
+  - Target size: ~100 MB (size-based encoding)
+  - Bitrate: ~183 kbps
+  - Preset: veryslow
+
+- Multi-pass strategy:
+  - 3-pass encoding (size targeting)
+  - First pass performed without "fast" optimizations (full analysis)
+  - Additional pass used to refine rate control accuracy
+
 - Optimized for low bitrate efficiency
 
 ---
