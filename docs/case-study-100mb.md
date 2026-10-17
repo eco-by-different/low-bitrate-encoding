@@ -144,7 +144,7 @@ Common parameters:
 --aq-strength 0.4  
 --deblock 1:1  
 --psy-rd 0.00:0.00  
---qcomp 0.80  
+--qcomp 0.85  
 --partitions p8x8,b8x8,i8x8,i4x4  
 --rc-lookahead 150  
 --open-gop  
